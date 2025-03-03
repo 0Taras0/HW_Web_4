@@ -1,0 +1,79 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+iframe[src*="somee.com"],
+script[src*="ads.mgmt.somee.com"],
+center a[href*="somee.com"] {
+  display: none !important;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card img {
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+.card-title {
+  font-size: clamp(14px, 2vw, 18px);
+  max-height: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+}
+.card-title a {
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  color: black;
+}
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.header-title {
+  font-weight: bold;
+}
+
+.menu-link {
+  color: black;
+}
+.menu-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .card-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
